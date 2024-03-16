@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input_box{
+    width: 100%;
+    padding: 3px;
+}
+.input_box:focus-visible {
+   
+    outline: 1px solid rgb(243, 30, 48);
+    
+}
+
+.input{
+    width: 50%;
+    display: flex;
+    max-width: 600px;
+    
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+}
+
+#search_btn {
+    background-color: rgb(240, 85, 85);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    margin-left: 4px;
+} 
+#search_btn:hover{
+    background-color: rgb(145, 9, 9);
+    
+}
+#search_btn:active{
+    background-color: rgb(245, 150, 150);
+    
+}
+
+#profileContainer{
+    width: 100%;
+}
+
+.profile-box{
+    margin: auto;
+    padding: 40px 20px;
+    max-width: 780px;
+    width: 50%;
+    box-shadow: 0 0 10rem rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in;
+    background-color: white;
+}
+.profile-box:hover{
+    transform: rotate(-2deg) scale(1.01);
+    transition: 0.5s ease-in;
+}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+}
+.top-section button{
+    align-self: center;
+    margin-left: 30px;
+}
+.top-section button{
+    background-color: rgb(240, 85, 85);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    margin-left: 4px;  
+}
+.top-section button:hover{
+    background-color: rgb(145, 9, 9); 
+}
+.top-section button:active{
+    background-color: rgb(245, 150, 150); 
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.left h1{
+    font-size: 16px;
+}
+
+
+.avatar{
+    height: 100px;
+    width: 100px;
+    
+}
+.avatar img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about{
+    margin: 20px;
+}
+.about h2{
+    font-size: 18px;
+}
+
+.status{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    margin: 20px;
+}
+.status h2{
+   font-size: 18px;
+}
